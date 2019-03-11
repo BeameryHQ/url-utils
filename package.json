@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:BeameryHQ/URI.git"
+    "url": "git+https://github.com:BeameryHQ/uri.git"
   },
   "license": "ISC",
   "dependencies": {
