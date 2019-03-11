@@ -1,6 +1,5 @@
 {
-  "name": "api-plugin-utils",
-  "private": true,
+  "name": "URI",
   "version": "2.1.0",
   "description": "URI Swiss Knife 🇨🇭🔪",
   "main": "index.js",
@@ -11,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:BeameryHQ/uri.git"
+    "url": "git+https://github.com:BeameryHQ/URI.git"
   },
   "license": "ISC",
   "dependencies": {
