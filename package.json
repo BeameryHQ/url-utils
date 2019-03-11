@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:BeameryHQ/URI.git"
+    "url": "git+https://github.com:BeameryHQ/URI.git"
   },
   "license": "ISC",
   "dependencies": {
-    "linkedin-canonical-url": "git+ssh://git@github.com:BeameryHQ/linkedin-canonical-url.git",
+    "linkedin-canonical-url": "git+https://github.com:BeameryHQ/linkedin-canonical-url.git",
     "lodash": "^4.16.6",
     "parse-domain": "^1.1.0"
   },
