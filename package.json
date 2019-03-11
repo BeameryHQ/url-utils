@@ -1,0 +1,27 @@
+{
+  "name": "api-plugin-utils",
+  "private": true,
+  "version": "2.1.0",
+  "description": "URI Swiss Knife 🇨🇭🔪",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/index.js",
+    "cover": "NODE_ENV=test istanbul cover _mocha -- -R spec test/index.js | static-server -p 3222 coverage/lcov-report/",
+    "performance": "node --allow-natives-syntax ./node_modules/mocha/bin/_mocha --reporter mocha-performance ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:BeameryHQ/URI.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "linkedin-canonical-url": "git+ssh://git@github.com:BeameryHQ/linkedin-canonical-url.git",
+    "lodash": "^4.16.6",
+    "parse-domain": "^1.1.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^6.0.2",
+    "static-server": "^2.0.4"
+  }
+}
