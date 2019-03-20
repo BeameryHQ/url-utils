@@ -1,5 +1,5 @@
 {
-  "name": "URI",
+  "name": "beam-uri",
   "version": "2.1.1",
   "description": "URI Swiss Knife 🇨🇭🔪",
   "main": "index.js",
