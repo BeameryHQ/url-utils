@@ -1,6 +1,6 @@
 {
   "name": "URI",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "URI Swiss Knife 🇨🇭🔪",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "linkedin-canonical-url": "latest",
+    "linkedin-canonical-url": "^1.0.6",
     "lodash": "^4.16.6",
     "parse-domain": "^1.1.0"
   },
