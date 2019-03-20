@@ -14,7 +14,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "linkedin-canonical-url": "git+https://github.com:BeameryHQ/linkedin-canonical-url.git",
+    "linkedin-canonical-url": "latest",
     "lodash": "^4.16.6",
     "parse-domain": "^1.1.0"
   },
