@@ -6,7 +6,9 @@
   "scripts": {
     "test": "mocha ./test/index.js",
     "cover": "NODE_ENV=test istanbul cover _mocha -- -R spec test/index.js | static-server -p 3222 coverage/lcov-report/",
-    "performance": "node --allow-natives-syntax ./node_modules/mocha/bin/_mocha --reporter mocha-performance ./test/index.js"
+    "performance": "node --allow-natives-syntax ./node_modules/mocha/bin/_mocha --reporter mocha-performance ./test/index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -16,11 +18,13 @@
   "dependencies": {
     "linkedin-canonical-url": "^1.0.6",
     "lodash": "^4.16.6",
-    "parse-domain": "^1.1.0"
+    "parse-domain": "^1.1.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "istanbul": "^0.4.5",
     "mocha": "^6.0.2",
     "static-server": "^2.0.4"
-  }
+  },
+  "snyk": true
 }
