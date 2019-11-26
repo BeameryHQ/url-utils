@@ -1,7 +1,8 @@
 {
   "env": {
     "es6": true,
-    "node": true
+    "node": true,
+    "mocha": true
   },
   "parserOptions": {
     "ecmaVersion": 2020,
@@ -159,7 +160,7 @@
         "max": 2
       }
     ],
-    "max-nested-callbacks": ["error", 3],
+    "max-nested-callbacks": ["error", 4],
     "unicode-bom": ["error", "never"],
     "switch-colon-spacing": [
       "error",
@@ -172,7 +173,6 @@
     "function-call-argument-newline": ["error", "never"],
     "func-names": ["error", "always"],
     "func-call-spacing": ["error", "never"],
-    "multiline-ternary": ["error", "never"],
     "multiline-comment-style": ["error", "starred-block"],
     "line-comment-position": ["error", { "position": "above" }],
     "space-before-blocks": ["error", "always"],

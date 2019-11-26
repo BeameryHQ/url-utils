@@ -1,6 +1,7 @@
 {
   "name": "beam-uri",
   "version": "2.1.1",
+  "type": "module",
   "description": "URI Swiss Knife 🇨🇭🔪",
   "main": "index.js",
   "scripts": {
