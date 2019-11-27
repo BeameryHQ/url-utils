@@ -20,7 +20,8 @@
     "linkedin-canonical-url": "^1.0.6",
     "lodash": "^4.16.6",
     "parse-domain": "^1.1.0",
-    "snyk": "^1.189.0"
+    "snyk": "^1.189.0",
+    "url-parse": "^1.4.7"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
