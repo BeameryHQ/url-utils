@@ -1,7 +1,6 @@
 {
   "name": "beam-uri",
   "version": "2.1.1",
-  "type": "module",
   "description": "URI Swiss Knife 🇨🇭🔪",
   "main": "index.js",
   "scripts": {
@@ -19,14 +18,12 @@
   "dependencies": {
     "linkedin-canonical-url": "^1.0.6",
     "lodash": "^4.16.6",
-    "parse-domain": "^1.1.0",
-    "snyk": "^1.189.0",
+    "normalize-url": "^4.5.0",
+    "parse-domain": "^2.3.4",
+    "snyk": "^1.252.0",
     "url-parse": "^1.4.7"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-plugin-optimize-regex": "^1.1.7",
-    "eslint-plugin-sort-keys-fix": "^1.0.1",
     "istanbul": "^0.4.5",
     "mocha": "^6.0.2",
     "static-server": "^2.0.4"

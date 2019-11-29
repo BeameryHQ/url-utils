@@ -50,3 +50,11 @@ Since the above getHostName() method gets us very close to a solution, we just n
 <dd><p>LinkedIn urls are &quot;localized&quot; to various markets, this micro-module creates a canonical url from any international one</p>
 </dd>
 </dl>
+
+# References
+
+- [In search of the perfect URL validation regex](https://mathiasbynens.be/demo/url-regex)
+- [uri-js](https://github.com/garycourt/uri-js): An RFC 3986 compliant, scheme extendable URI parsing/validating/normalizing/resolving library for JavaScript
+- [regex-weburl](https://gist.github.com/dperini/729294): Regular Expression for URL validation
+- [parse-domain](https://github.com/peerigon/parse-domain): Splits a URL into sub-domain, domain and the top-level domain. Provides TypeScript typings
+- [normalize-url](https://github.com/sindresorhus/normalize-url): Normalize a URL
