@@ -43,3 +43,4 @@ require('./lib/getDomainName');
 require('./lib/getHostname');
 require('./lib/isValidURI');
 require('./lib/isValidIP');
+require('./lib/removeURLTracking')
