@@ -17,7 +17,7 @@ describe('urlUtils helper', () => {
       assert.equal(urlUtils.getDomainName(), false);
     });
     it('should fail if no URI is passed to getCanonicalLinkedinUrl', () => {
-      assert.equal(urlUtils.getCanonicalLinkedinUrl(), false);
+      assert.equal(urlUtils.normalize(), false);
     });
   });
 
@@ -32,14 +32,12 @@ describe('urlUtils helper', () => {
       assert.equal(urlUtils.getDomainName('http:// shouldfail.com'), false);
     });
     it('should return false if no valid URI was passed to getCanonicalLinkedinUrl', () => {
-      assert.equal(
-        urlUtils.getCanonicalLinkedinUrl('http:// shouldfail.com'), false
-      );
+      assert.equal(urlUtils.normalize('http:// shouldfail.com'), false);
     });
   });
 });
 
-require('./lib/getCanonicalLinkedinUrl');
+require('./lib/normalize');
 require('./lib/getDomain');
 require('./lib/getDomainName');
 require('./lib/getHostname');
