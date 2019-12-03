@@ -97,8 +97,8 @@ describe('removeURLTracking function', () => {
   it('should remove both global and domain-specific parameters', () => {
     assert.equal(
       urlUtils.removeURLTracking(
-        'https://facebook.com/page_title?comment_tracking=f4c93d76a953?utm_campaign=092c4759'
-      ), 'https://facebook.com/page_title'
+        'https://instagram.com/page_title?igshid=f4c93d76a953?utm_campaign=092c4759'
+      ), 'https://instagram.com/page_title'
     );
   });
 
