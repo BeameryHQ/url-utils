@@ -29,27 +29,82 @@ The Node.js `url` module provides two APIs for working with URLs: a legacy API t
 (all spaces in the "" line should be ignored — they are purely for formatting)
 ```
 
-<dl>
-<dt><a href="helpers/README.md#isValidURI">isValidURI(url)</a> ⇒ <code>Boolean</code></dt>
-<dd><p>Validate if a passed string is a valud URI according to: <a href="https://gist.github.com/dperini/729294">https://gist.github.com/dperini/729294</a></p>
-</dd>
-<dt><a href="helpers/README.md#getHostName">getHostName(url)</a> ⇒ <code>String</code></dt>
-<dd><p>Extracting the hostname from a url is generally easier than parsing the domain.
+<a name="getDomain"></a>
+
+## getDomain(url) ⇒ <code>String</code>
+
+We can extract the domain from a url by leveraging our method for parsing the hostname.
+Since the above getHostName() method gets us very close to a solution, we just need to remove the sub-domain and clean-up special cases (such as .co.uk)
+
+**Returns**: <code>String</code> - the extracted domain
+
+<a name="getDomainName"></a>
+
+## getDomainName(url) ⇒ <code>String</code>
+
+Extract the main domain without the .domain notation
+
+**Returns**: <code>String</code> - the extracted domain
+
+<a name="getHostName"></a>
+
+## getHostName(url) ⇒ <code>String</code>
+
+Extracting the hostname from a url is generally easier than parsing the domain.
 The hostname of a url consists of the entire domain plus sub-domain.
 We can easily parse this with a regular expression, which looks for everything to the left of the double-slash in a url.
-We remove the “www” (and associated integers e.g. www2), as this is typically not needed when parsing the hostname from a url</p>
-</dd>
-<dt><a href="helpers/README.md#getDomain">getDomain(url)</a> ⇒ <code>String</code></dt>
-<dd><p>We can extract the domain from a url by leveraging our method for parsing the hostname.
-Since the above getHostName() method gets us very close to a solution, we just need to remove the sub-domain and clean-up special cases (such as .co.uk)</p>
-</dd>
-<dt><a href="helpers/README.md#getDomainName">getDomainName(url)</a> ⇒ <code>String</code></dt>
-<dd><p>Extract the main domain without the .domain notation</p>
-</dd>
-<dt><a href="helpers/README.md#getCanonicalLinkedinUrl">getCanonicalLinkedinUrl(url)</a> ⇒ <code>String</code></dt>
-<dd><p>LinkedIn urls are &quot;localized&quot; to various markets, this micro-module creates a canonical url from any international one</p>
-</dd>
-</dl>
+We remove the “www” (and associated integers e.g. www2), as this is typically not needed when parsing the hostname from a url
+
+**Returns**: <code>String</code> - the extracted hostname
+
+<a name="getLinkType"></a>
+
+## getLinkType(source) ⇒ <code>String</code>
+
+Identify if the link is for a social website
+
+**Kind**: global function
+
+## isValidIP(ip) ⇒ <code>Boolean</code>
+
+Validate if a passed string is a valid IP according to: http://jsfiddle.net/AJEzQ/
+
+**Returns**: <code>Boolean</code> - indication if the string is valid URI or not
+
+<a name="isValidURI"></a>
+
+## isValidURI(url) ⇒ <code>Boolean</code>
+
+Validate if a passed string is a valid URI according to: https://gist.github.com/dperini/729294
+
+**Returns**: <code>Boolean</code> - indication if the string is valid URI or not
+
+<a name="normalize"></a>
+
+## normalize(url) ⇒ <code>String</code>
+
+normalize and canonicalise urls including data URL
+The function first normalize the url by performing various steps from lower-casing to encoding
+The function then strips any url trackers and paddings in the url
+The function tries to canonicalise the url if possible based on configurations depending on the domain name
+
+**Returns**: <code>String</code> - the normalized and canonical url
+
+<a name="removeURLTracking"></a>
+
+## removeURLTracking(url) ⇒ <code>String</code>
+
+removes tracking query parameters from the url
+
+**Returns**: <code>String</code> - strippedUrl the URL address after tracker stripping
+
+<a name="parse"></a>
+
+## parse(url) ⇒ <code>Object</code>
+
+Parses a valid URI into its subparts
+
+**Returns**: <code>Object</code> - the parsed url
 
 # References
 
