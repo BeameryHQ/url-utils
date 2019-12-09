@@ -1,14 +1,13 @@
 {
   "name": "beam-uri",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "URI Swiss Knife 🇨🇭🔪",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test/index.js",
     "cover": "NODE_ENV=test istanbul cover _mocha -- -R spec test/index.js | static-server -p 3222 coverage/lcov-report/",
     "performance": "node --allow-natives-syntax ./node_modules/mocha/bin/_mocha --reporter mocha-performance ./test/index.js",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",

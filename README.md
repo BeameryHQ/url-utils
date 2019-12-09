@@ -1,5 +1,11 @@
 # URI Swiss Army Knife Utilities
 
+You can install this via the published NPM package:
+
+```bash
+npm i beam-uri
+```
+
 ## URL Validation
 
 A complete definition of what constitutes a valid URL can be found in [RFC 3986](http://tools.ietf.org/html/rfc3986) and [RFC 3987](http://tools.ietf.org/html/rfc3987). The short version is that a valid URL must, at minimum, consist of a scheme (`https://`, `http://ftp://`, `http://gopher://`) and a host name. If it does not, validation should fail, and the browser should throw an error.
