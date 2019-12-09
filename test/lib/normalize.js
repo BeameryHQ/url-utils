@@ -3,9 +3,6 @@ const assert = require('assert');
 const urlUtils = require('../../index');
 
 describe('URL normalize function', () => {
-  it('should correctly normalize and canonicalize Linkedin urls', () => {
-    let x;
-  });
   describe('Canonicalization of links', () => {
     describe('Linkedin URL Canonicalization', () => {
       it('should correctly normalize and canonicalize Linkedin urls', () => {

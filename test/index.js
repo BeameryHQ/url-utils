@@ -41,6 +41,7 @@ require('./lib/normalize');
 require('./lib/getDomain');
 require('./lib/getDomainName');
 require('./lib/getHostname');
+require('./lib/getLinkType');
 require('./lib/isValidURI');
 require('./lib/isValidIP');
-require('./lib/removeURLTracking')
+require('./lib/removeURLTracking');
