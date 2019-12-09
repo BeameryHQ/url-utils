@@ -5,6 +5,7 @@ const getHostName = require('./lib/getHostname/');
 const isValidIP = require('./lib/isValidIP/');
 const isValidURI = require('./lib/isValidURI/');
 const parse = require('./lib/parse/');
+const removeURLTracking = require('./lib/removeURLTracking')
 
 module.exports = {
   getDomain,
@@ -13,5 +14,6 @@ module.exports = {
   isValidIP,
   isValidURI,
   normalize,
-  parse
+  parse,
+  removeURLTracking
 };
