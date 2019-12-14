@@ -1,6 +1,6 @@
 {
   "name": "beam-uri",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "URI Swiss Knife 🇨🇭🔪",
   "main": "index.js",
   "scripts": {
@@ -15,11 +15,10 @@
   },
   "license": "ISC",
   "dependencies": {
-    "linkedin-canonical-url": "^1.0.6",
     "lodash": "^4.16.6",
     "normalize-url": "^4.5.0",
     "parse-domain": "^2.3.4",
-    "snyk": "^1.252.0",
+    "snyk": "^1.260.0",
     "url-parse": "^1.4.7"
   },
   "devDependencies": {
